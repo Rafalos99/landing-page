@@ -113,7 +113,16 @@ justify-content: space-between;
 
 .call-to-action {
     display: flex;
+    border: 2px solid red;
+    margin: 50px 300px;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: #3882F6;
+    justify-content: space-between;
 }
+
+.action-heading {
+
+}
+
