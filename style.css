@@ -1,161 +1,24 @@
 body {
     display: flex;
     flex-direction: column;
-    color: #F9FAF8;
     margin: 0;
     flex-shrink: 0;
+    min-height: 100%;
 }
 
+.background {
 
-header {
+}
+
+.headerBar {
+    width: 100%;
     background-color: #1F2937;
     display: flex;
-    flex-direction: column;
-    border: 2px solid red;
-}
-
-
-nav, .intro {
-    margin-left: 300px;
-    margin-right: 300px; 
-}
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-        border: 2px solid yellow;
-    
-        
-}
-
-.logo {
-    font-size: 24px;
-    color: #F9FAF8;
-    font-weight: 700;
-        border: 2px solid red;
-}
-
-ul {
-    display: flex;
-    list-style-type: none;
-    /* this removes the dots on the list items*/
-    gap: 16px;
-    /* The lists have some auto padding and margin */
-    margin: 0;
-    padding: 0;
-        border: 2px solid red;
-}
-
-a {
-    color: white;
-    text-decoration: none;
-
-}
-
-
-.intro {
-    display: flex;
-    margin-top: 50px;
-    border: 2px solid yellow;
-    justify-content: space-between;
-    
-    /* width: 100%;
-        height: fit-content;
-        width: fit-content; */
-}
-
-.text {
-    display: flex;
-    flex-direction: column;
-    border: 2px solid red;
-}
-
-.button-1 {
-display: inline-block;
-background-color: #3882F6;
-font-weight: bold;
-width: 110px;
-text-align: center;
-border: none;
-border-radius: 6px;
-padding: 5px;
-}
-
-
-.hero-image {
-    display: flex;
-        border: 2px solid red;
-}
-
-.content {
-    color: #1F2937;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 2px solid red;
-    flex-direction: column;
-    margin-top: 15px;
-}
-
-.illustration {
-    display: flex;
-    gap: 35px;
-    color: black;
-    border: 2px solid red;
-    margin-bottom: 100px;
-    justify-content: space-between;
-    align-items: center;
-    margin-left: 400px;
-    margin-right: 400px;
-}
-
-/* .illustration, .images {
-    display: flex;
-    border: 2px solid red;
-    justify-content: center;
-    align-items: center;
-} */
-
-.quote {
-    height: 400px;
-    display: flex;
-    border: 2px solid red;
-    background-color: #E5E7EB;
-    font-size: 36px;
-    color: #1F2937;
-    justify-content: center;
-    align-items: center;
-}
-
-/* .illustration, .quote {
-    margin-left: 400px;
-    margin-right: 400px;
-} */
-
-.call-to-action {
-    display: flex;
-    border: 2px solid red;
-    margin: 50px 300px;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    background-color: #3882F6;
-    justify-content: space-around;
+    border: 2px solid red;
+    text-decoration: none;
+    position: fixed;
 }
 
-.action-heading {
-font-weight: 700;
-margin-bottom: 0;
-}
-
-.action-text {
-    margin-top: 0;
-}
-
-footer {
-    background-color: #1F2937;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
