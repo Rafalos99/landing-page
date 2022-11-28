@@ -22,3 +22,57 @@ body {
     position: fixed;
 }
 
+.leftBarContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    width: 25em;
+    margin: 0.8em;
+    border: 1px red solid;
+}
+
+/* .logoContainer {
+    display: flex;
+    border: 1px blue solid;
+    width: 12em;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+} */
+
+
+.logoGodofWar {
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    letter-spacing: 0.1em;
+    font-family: 'Times New Roman', Times, serif;
+    /* change font to god of war style */
+}
+
+/* .kratosImage {
+
+} */
+
+
+
+.rightBarLinks {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    width: 25em;
+    margin: 0.8em;
+    border: 1px red solid;
+    list-style: none;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
