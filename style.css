@@ -28,9 +28,9 @@ body {
     align-items: center;
     justify-content: space-between;
     color: white;
-    width: 25em;
     margin: 0.8em;
     border: 1px red solid;
+    max-width: fit-content;
 }
 
 /* .logoContainer {
@@ -52,11 +52,56 @@ body {
     /* change font to god of war style */
 }
 
-/* .kratosImage {
+/* .logoImageContainer {
+    display: flex;
+    align-items: center;
+    margin-right: 0.5em;
+} */
+
+.kratosImage {
+    width: 4em;
+}
+
+
+/* .audioController {
 
 } */
 
 
+/* #audioController:hover {
+
+} */
+
+
+/* .sourcesContainer {
+
+}
+
+.link  {
+
+}
+
+.link:hover {
+
+}
+
+.dropdownContent {
+
+}
+
+
+.aboutCopyright {
+
+}
+
+
+.sourcesLink {
+
+}
+
+.dm {
+
+} */
 
 .rightBarLinks {
     display: flex;
@@ -65,7 +110,7 @@ body {
     justify-content: space-between;
     color: white;
     width: 25em;
-    margin: 0.8em;
+    margin-right: 0.8em;
     border: 1px red solid;
     list-style: none;
     text-decoration: none;
@@ -76,3 +121,4 @@ a {
     color: aliceblue;
 }
 
+/* Coming back to links later */
