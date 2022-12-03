@@ -20,6 +20,7 @@ body {
     border: 2px solid red;
     text-decoration: none;
     position: fixed;
+ 
 }
 
 .leftBarContainer {
@@ -172,6 +173,7 @@ a {
     border-radius: 1.5em;
     margin: 9em auto 0 auto;
     display: flex;
+    /* Making two boxes in row. Layer right and layer left */
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -192,9 +194,10 @@ a {
 
 .greetings {
     font-size: 2.2em;
+    /* That glow affect around the heading text here */
     text-shadow: 0 0 0.8em rgb(255, 255, 255);
     text-align: center;
-    font-family: "kawashiro";
+    font-family: 'Times New Roman', Times, serif;
 
 }
 
@@ -215,6 +218,53 @@ a {
 
 
 /* Layer 2 START */
-       
+
+.secondLayer {
+    margin-top: 20em;
+    /* Need a background color that matches the GOW aesthetic */
+    background-image: linear-gradient(rgb(176, 209, 240), rgb(221, 231, 240));
+}
+
+.secondLayerContent {
+    padding: 1em;
+}
+
+.secondLayerHeading {
+    color: aliceblue;
+    font-size: 2em;
+    text-align: center;
+    margin: 0.5em 1em;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.secondLayerContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 2em 2em;
+}
+
+.gameContainer, .trailerContainer, .storyContainer, .SMS_Container, .twitterContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* flex grow as 1 so all of the containers holding the images are the same size */
+    /* Flex shrink = 1 is the default omitted value */
+    flex: 1 1 0px;
+}
+
+.gameImage, .trailerImage, .storyImage, .SMS_Image, .twitterImage {
+    /* Use similar aspect ratio when sizing pictures to prevent distortion */
+    width: 12em;
+    height: 14em;
+    /* fits image or video in its container */
+    object-fit: scale-down;     
+    border: 0.3em solid rgb(255, 255, 255);  
+    /* Make the corners rounded */
+    border-radius: 1.5em; 
+    /* box shadow will make the buttons stand out from background  */
+    box-shadow: 0 10px 30px black;
+}
 
 /* Layer 2 END */
