@@ -116,9 +116,105 @@ body {
     text-decoration: none;
 }
 
+/* .seperator {
+
+} */
+
 a {
     text-decoration: none;
     color: aliceblue;
+    margin: 0;
+    padding: 0 6px;
+}
+
+
+/* DOWN: makes a background rectangle that fills from left to right underneath */
+/* This is BEFORE */
+.about:after,
+.characters:after,
+.music:after,
+.contact:after {
+    content: "";
+    position: absolute;
+    background-image: linear-gradient(to right, rgb(0, 217, 255), rgb(0, 4, 255));
+    height: 2px;
+    width: 0%;
+    left: 0;
+    bottom: -2px;
+    transition: 0.3s;
+}
+
+/* fills the bar to the complete width */
+/* This is AFTER */
+.about:hover:after,
+.characters:hover:after,
+.music:hover:after,
+.contact:hover:after {
+    width: 100%;
+}
+
+/* Imitates the same as above but for the text*/
+.about:hover,
+.characters:hover,
+.music:hover,
+.contact:hover {
+    text-shadow: 0 0 5px rgb(59, 210, 230), 0 0 12px rgb(59, 210, 230), 0 0 20px rgb(59, 210, 230);
+    color: white;
 }
 
 /* Coming back to links later */
+
+/* Layer 1 START */
+
+.firstLayerContainer {
+    width: 85%;
+    height: 100%;
+    border-radius: 1.5em;
+    margin: 9em auto 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    box-shadow: 0 0 2em rgb(69, 69, 69);
+}
+
+.firstLayerLeft  {
+    color: white;
+    margin: 3em 2em 3em 5em;
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+
+.greetings {
+    font-size: 2.2em;
+    text-shadow: 0 0 0.8em rgb(255, 255, 255);
+    text-align: center;
+    font-family: "kawashiro";
+
+}
+
+.description {
+    margin-top: 2em;
+    font-size: 1.1em;
+    line-height: 1.4em;
+    /* Justify keeps the paragraph lined up as the browser window is resized  */
+    text-align: justify; 
+}
+
+
+.firstLayerRight {
+
+}
+/* Layer 1 END */
+
+
+
+/* Layer 2 START */
+       
+
+/* Layer 2 END */
