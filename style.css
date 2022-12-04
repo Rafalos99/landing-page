@@ -20,7 +20,9 @@ body {
     border: 2px solid red;
     text-decoration: none;
     position: fixed;
- 
+    /* z-index so the header bar is always on top of everything. look at the expanding buttons without it */
+    z-index: 2;
+
 }
 
 .leftBarContainer {
@@ -222,7 +224,7 @@ a {
 .secondLayer {
     margin-top: 20em;
     /* Need a background color that matches the GOW aesthetic */
-    background-image: linear-gradient(rgb(176, 209, 240), rgb(221, 231, 240));
+    background-image: linear-gradient(rgb(152, 11, 11), rgb(26, 11, 2));
 }
 
 .secondLayerContent {
@@ -252,6 +254,8 @@ a {
     /* flex grow as 1 so all of the containers holding the images are the same size */
     /* Flex shrink = 1 is the default omitted value */
     flex: 1 1 0px;
+    /* Space the buttons away from one another a little */
+    margin: 1em 2em 0 2em;
 }
 
 .gameImage, .trailerImage, .storyImage, .SMS_Image, .twitterImage {
@@ -259,12 +263,34 @@ a {
     width: 12em;
     height: 14em;
     /* fits image or video in its container */
-    object-fit: scale-down;     
-    border: 0.3em solid rgb(255, 255, 255);  
+    object-fit: cover;     
+    border: 0.4em solid rgb(255, 255, 255);  
     /* Make the corners rounded */
     border-radius: 1.5em; 
     /* box shadow will make the buttons stand out from background  */
     box-shadow: 0 10px 30px black;
 }
+
+.gameImage:hover, .trailerImage:hover, .storyImage:hover, .SMS_Image:hover, .twitterImage:hover {
+    /* Hovering over buttons to make them grow a bit bigger for interactivity */
+    transform: scale(1.2);
+    /* Slow down expansion so it doesn't seem so abrupt */
+    transition: 0.5s;
+    box-shadow: 0 0 30px rgb(255, 0, 0);
+}
+
+
+.buyGameSubtext, .trailerSubtext, .storySubtext, .SMS_Subtext, .twitterSubtext {
+    text-align: center;
+    font-size: 1.5em;
+    margin: 1em 0 2em 0;
+    color: aliceblue;
+    font-weight: 600;
+    text-shadow: 0 5px 20px black;
+}
+
+
+
+
 
 /* Layer 2 END */
