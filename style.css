@@ -273,7 +273,7 @@ a {
 
 .gameImage:hover, .trailerImage:hover, .storyImage:hover, .SMS_Image:hover, .twitterImage:hover {
     /* Hovering over buttons to make them grow a bit bigger for interactivity */
-    transform: scale(1.2);
+    transform: scale(1.05);
     /* Slow down expansion so it doesn't seem so abrupt */
     transition: 0.5s;
     box-shadow: 0 0 30px rgb(255, 0, 0);
@@ -294,3 +294,20 @@ a {
 
 
 /* Layer 2 END */
+
+/* Layer 3 START */
+
+.thirdLayer {
+    background-image: url(images/god-of-war-ragnarok-kratos-freya-atreus-2022-games-1920x1080-8635.jpg);
+    background-size: cover;
+    object-fit: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+}
+
+
+
+/* Layer 3 END */
