@@ -17,7 +17,7 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     text-decoration: none;
     position: fixed;
     /* z-index so the header bar is always on top of everything. look at the expanding buttons without it */
@@ -32,7 +32,7 @@ body {
     justify-content: space-between;
     color: white;
     margin: 0.8em;
-    border: 1px red solid;
+    /* border: 1px red solid; */
     max-width: fit-content;
 }
 
@@ -114,9 +114,10 @@ body {
     color: white;
     width: 25em;
     margin-right: 0.8em;
-    border: 1px red solid;
+    /* border: 1px red solid; */
     list-style: none;
     text-decoration: none;
+    margin-right: 3em;
 }
 
 /* .seperator {
@@ -131,7 +132,7 @@ a {
 }
 
 
-/* DOWN: makes a background rectangle that fills from left to right underneath */
+/* makes a background rectangle that fills from left to right underneath */
 /* This is BEFORE */
 .about:after,
 .characters:after,
@@ -255,12 +256,12 @@ a {
     /* Flex shrink = 1 is the default omitted value */
     flex: 1 1 0px;
     /* Space the buttons away from one another a little */
-    margin: 1em 2em 0 2em;
+    margin: 1em 2.5em 0 2.5em;
 }
 
 .gameImage, .trailerImage, .storyImage, .SMS_Image, .twitterImage {
     /* Use similar aspect ratio when sizing pictures to prevent distortion */
-    width: 12em;
+    width: 14em;
     height: 14em;
     /* fits image or video in its container */
     object-fit: cover;     
@@ -305,9 +306,65 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100%;
+    min-height: 800px;
+}
+
+.thirdLayerContainer {
+    display: flex;
+    /* border: solid red 2px; */
+    color: aliceblue;
+    font-size: 45px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0.1em;
+    font-weight: 600;
+    text-shadow: 0 5px 20px black;
+    text-align: center;
+}
+
+.thirdLayerQuote {
+    margin-bottom: 1em;
+   
+}
+
+.quoteBy {
+    font-size: 35px;
+}
+
+/* Layer 3 END */
+
+
+/* Layer 4 START */
+
+.fourthLayer {
+    background-color: #1F2937;
+}
+
+.fourthLayerContainer {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    padding: 60px;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.fourthLayerText {
+    display: flex;
+    flex-direction: column;
+}
+
+.fourthLayerHeading {
+    font-weight: 800;
+}
+
+.contact {
 }
 
 
 
-/* Layer 3 END */
+
+
+/* Layer 4 END */
